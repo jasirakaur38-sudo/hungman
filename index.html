@@ -1,1 +1,50 @@
-nivaanivaazz
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #wordDisplay {
+            font-size: 30px;
+            letter-spacing: 10px;
+        }
+        #guessesArea {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 50px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hangman Game</h1>
+
+    <h2 id="wordDisplay">_ _ _ _</h2>
+
+    <input type="text" id="guessInput" maxlength="1">
+    <br>
+    <button id="guessBtn">Guess</button>
+    <br><br>
+    <button onclick="startGame()">Start Game</button>
+
+    <p id="guessesArea"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
